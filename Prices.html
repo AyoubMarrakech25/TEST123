@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Pricing Plans</title>
+<style>
+  /* ---------- Global Styles ---------- */
+  * {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+
+  body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f9f9f9;
+    color: #333;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 40px 20px;
+  }
+
+  h1 {
+    margin-bottom: 40px;
+    color: #1b1b1b;
+  }
+
+  /* ---------- Pricing Section ---------- */
+  .pricing-container {
+    display: flex;
+    gap: 30px;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .card {
+    background-color: #fff;
+    border-radius: 15px;
+    box-shadow: 0 6px 18px rgba(0,0,0,0.1);
+    overflow: hidden;
+    width: 300px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 12px 24px rgba(0,0,0,0.2);
+  }
+
+  .card img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+  }
+
+  .card h2 {
+    font-size: 1.5rem;
+    margin: 20px 0 10px;
+    color: #C1272D;
+  }
+
+  .card .price {
+    font-size: 2rem;
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
+
+  .card p.description {
+    font-size: 0.95rem;
+    padding: 0 20px;
+    margin-bottom: 20px;
+    color: #555;
+  }
+
+  .card button {
+    background-color: #C1272D;
+    color: white;
+    border: none;
+    padding: 12px 25px;
+    border-radius: 8px;
+    font-size: 1rem;
+    cursor: pointer;
+    margin-bottom: 20px;
+    transition: background-color 0.3s ease;
+  }
+
+  .card button:hover {
+    background-color: #a01f27;
+  }
+
+  /* ---------- Responsive ---------- */
+  @media (max-width: 1000px) {
+    .pricing-container {
+      gap: 20px;
+    }
+  }
+
+  @media (max-width: 700px) {
+    .card {
+      width: 100%;
+      max-width: 350px;
+    }
+  }
+</style>
+</head>
+<body>
+
+<h1>Our Pricing Plans</h1>
+
+<div class="pricing-container">
+  <!-- Basic Plan -->
+  <div class="card">
+    <img src="pic1.jpg" alt="Basic Plan">
+    <h2>Basic</h2>
+    <div class="price">$10</div>
+    <p class="description">Perfect for individuals who want to try our services with minimal commitment.</p>
+    <button>Select</button>
+  </div>
+
+  <!-- Standard Plan -->
+  <div class="card">
+    <img src="pic2.jpg" alt="Standard Plan">
+    <h2>Standard</h2>
+    <div class="price">$20</div>
+    <p class="description">Our most popular plan offering a balance of features and affordability.</p>
+    <button>Select</button>
+  </div>
+
+  <!-- Premium Plan -->
+  <div class="card">
+    <img src="pic3.jpg" alt="Premium Plan">
+    <h2>Premium</h2>
+    <div class="price">$30</div>
+    <p class="description">For those who want the ultimate experience with all premium features included.</p>
+    <button>Select</button>
+  </div>
+</div>
+
+</body>
+</html>
