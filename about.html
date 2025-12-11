@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>About & Contact — Ayoub’s Marrakech Tours</title>
+<style>
+:root {
+  --moroccan-red: #C1272D;
+  --dark: #1b1b1b;
+  --radius: 12px;
+  --container: 1100px;
+}
+*{ box-sizing:border-box; margin:0; padding:0;}
+body{ font-family:'Montserrat', system-ui; color: var(--dark); line-height:1.5; }
+.container{ max-width:var(--container); margin:40px auto; padding:0 20px; }
+
+/* HEADER */
+.site-header{
+  background: linear-gradient(180deg,var(--moroccan-red),#b21f24);
+  color:white;
+  padding:18px 0;
+}
+.site-header .brand{ font-weight:800; font-size:1.5rem; }
+.nav{ display:flex; gap:16px; }
+.nav a{ color:white; text-decoration:none; font-weight:600; transition:0.3s; }
+.nav a:hover{ text-decoration: underline; }
+
+/* PAGE TITLE */
+.page-title{ font-size:2.4rem; color:var(--moroccan-red); margin-bottom:20px; text-align:center; }
+
+/* CARDS */
+.card{
+  background:#fff;
+  padding:30px;
+  border-radius:var(--radius);
+  box-shadow:0 4px 14px rgba(0,0,0,0.08);
+  margin:30px 0;
+}
+
+/* CONTACT LINKS */
+.card a{ color:var(--moroccan-red); text-decoration:none; }
+.card a:hover{ text-decoration:underline; }
+</style>
+</head>
+<body>
+
+<header class="site-header">
+  <div class="container" style="display:flex; justify-content:space-between; align-items:center;">
+    <h1 class="brand">Ayoub’s Marrakech Tours</h1>
+    <nav class="nav">
+      <a href="index.html">Home</a>
+      <a href="about.html">About / Contact</a>
+    </nav>
+  </div>
+</header>
+
+<div class="container">
+  <h2 class="page-title">About Ayoub</h2>
+
+  <div class="card">
+    <p>Hello! My name is Ayoub. I guide tourists through Marrakech, Atlas Mountains, and Ourika Valley, creating authentic, safe, and unforgettable experiences.</p>
+    <ul>
+      <li>Atlas Mountains adventures</li>
+      <li>Marrakech Medina exploration</li>
+      <li>Ourika Valley cultural trips</li>
+    </ul>
+  </div>
+
+  <div class="card">
+    <h3>Contact Information</h3>
+    <p><strong>WhatsApp:</strong> <a href="https://wa.me/212600000000" target="_blank">+212 6 00 00 00 00</a></p>
+    <p><strong>Email:</strong> <a href="mailto:ayoub@example.com">ayoub@example.com</a></p>
+    <p><strong>Instagram:</strong> <a href="https://instagram.com/trekwithayoub" target="_blank">@trekwithayoub</a></p>
+  </div>
+</div>
+
+</body>
+</html>
